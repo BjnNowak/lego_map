@@ -18,11 +18,13 @@ library(tidyverse)
 library(sf)
 ```
 
-We will also need a base map with the data, which may be downloaded at [this link](https://github.com/BjnNowak/TidyTuesday/raw/main/map/sport/france_sport.gpkg) or loaded directy in R as shown below:
+We will also need a base map with the data, which may be downloaded at [this link](https://github.com/BjnNowak/lego_map/raw/main/data/france_sport.gpkg) or loaded directy in R as shown below:
 
 ```{r}
-map<-sf::read_sf('https://github.com/BjnNowak/TidyTuesday/raw/main/map/sport/france_sport.gpkg')
+map<-sf::read_sf('https://github.com/BjnNowak/lego_map/raw/main/data/france_sport.gpkg')
 ```
+
+Data for this map come from the [Observatoire des Territoires](https://www.observatoire-des-territoires.gouv.fr/nombre-de-licencies-sportifs).
 
 ## 2. Make choropleth
 
